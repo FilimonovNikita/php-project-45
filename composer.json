@@ -8,7 +8,10 @@
         }
     ],
     "bin": [
-        "bin/brain-games"
+        "bin/brain-games",
+        "bin/test2.php"
     ],
-    "require": {}
+    "require": {
+        "wp-cli/wp-cli": "^2.10"
+    }
 }
