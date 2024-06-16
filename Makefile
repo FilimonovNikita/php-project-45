@@ -12,3 +12,5 @@ validate:
 
 init:
 	composer exec --verbose phpcs -- --standard=PSR12 src bin
+even:
+	php bin/brain-even.php
