@@ -1,0 +1,12 @@
+#!/usr/bin/env php
+<?php
+
+require_once __DIR__ . '/../vendor/autoload.php';
+/*
+use function Braingames\Games\calculator\startCalculator;
+
+startCalculator();*/
+
+use function Braingames\Games\Gcd\startgsd;
+
+startgsd();
