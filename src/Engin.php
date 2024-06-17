@@ -8,14 +8,14 @@ use function BrainGames\Cli\welcome;
 
 function startGame(string $welcomeMessage, array $questionAnswerPairs)
 {
-    welcome();
+    $name = welcome();
     line($welcomeMessage);
     $passed = true;
     foreach ($questionAnswerPairs as [$question, $answer]){
         line("Question: {$question}");
-        $userAnsfer = promt("Your answer: ");
+        $userAnsfer = prompt("Your answer: ");
         if ($userAnsfer !== $answer){
-            line("'{$userAnswer}' is wrong answer ;(. Correct answer was '{$answer}'.");
+            line("'{$userAnsfer}' is wrong answer ;(. Correct answer was '{$answer}'.");
             line("Let's try again, %s!", $name);
             $passed &= false;
             
@@ -26,6 +26,6 @@ function startGame(string $welcomeMessage, array $questionAnswerPairs)
         }
     }
     if ($passed) {
-        line("Congratulations, %s!", $name);
+        line("Congratulations, {$name}");
     }
 }

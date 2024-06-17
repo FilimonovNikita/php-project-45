@@ -7,6 +7,14 @@
             "email": "filimonovnikitav@gmail.com"
         }
     ],
+    "autoload": {
+        "files": [
+            "src/Cli.php",
+            "src/Engin.php",
+            "src/Games/even.php",
+            "src/testFunImp.php"
+        ]
+    },
     "bin": [
         "bin/brain-games",
         "bin/test2",

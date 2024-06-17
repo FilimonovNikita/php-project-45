@@ -2,7 +2,7 @@
 
 namespace BrainGames\Games\Even;
 
-use function BrainGames\Cli\welcome;
+use function Braingames\Games\Engine\startGame;
 
 function startEven()
 {

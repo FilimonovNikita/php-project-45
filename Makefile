@@ -2,10 +2,10 @@ install:
 	composer install
 
 brain-games:
-	php bin/brain-games.php
+	./bin/brain-games
 
 testRead:
-	php bin/test2.php
+	./bin/test2
 
 validate:
 	composer validate
@@ -13,4 +13,4 @@ validate:
 init:
 	composer exec --verbose phpcs -- --standard=PSR12 src bin
 even:
-	php bin/brain-even.php
+	./bin/brain-even
