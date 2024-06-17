@@ -14,3 +14,5 @@ init:
 	composer exec --verbose phpcs -- --standard=PSR12 src bin
 even:
 	./bin/brain-even
+brain-calc:
+	./bin/brain-calc

@@ -12,13 +12,15 @@
             "src/Cli.php",
             "src/Engin.php",
             "src/Games/even.php",
-            "src/testFunImp.php"
+            "src/testFunImp.php",
+            "src/Games/calculator.php"
         ]
     },
     "bin": [
         "bin/brain-games",
         "bin/test2",
-        "bin/brain-even.php"
+        "bin/brain-even",
+        "bin/brain-calc"
     ],
     "require": {
         "wp-cli/wp-cli": "^2.10",
