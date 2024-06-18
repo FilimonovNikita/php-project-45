@@ -14,7 +14,6 @@ function startGame(string $welcomeMessage, array $questionAnswerPairs)
     foreach ($questionAnswerPairs as [$question, $answer]){
         line("Question: {$question}");
         $userAnsfer = prompt("Your answer: ");
-        line ("$userAnsfer {$a} /n $answer {$b}");
         if ($userAnsfer !== $answer){
             line("'{$userAnsfer}' is wrong answer ;(. Correct answer was '{$answer}'.");
             line("Let's try again, %s!", $name);

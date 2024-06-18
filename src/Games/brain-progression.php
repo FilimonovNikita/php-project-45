@@ -23,7 +23,7 @@ function starprogression()
         $arrayPosQuestion = rand(0, $arrayNumber-1);
         $answer = $arrayAllNumbers[$arrayPosQuestion];
         $arrayAllNumbers[$arrayPosQuestion] = "..";
-        $question = implode(",", $arrayAllNumbers);
+        $question = implode(" ", $arrayAllNumbers);
         $questionAnswerPairs[] = [$question,(string) $answer];
     }
     startGame($welcomeMessage, $questionAnswerPairs);
