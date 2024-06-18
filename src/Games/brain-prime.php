@@ -7,7 +7,6 @@ use function Braingames\Games\Engine\startGame;
 function startprime()
 {
     $welcomeMessage = 'Answer "yes" if given number is prime. Otherwise answer "no".';
-    
     $questionAnswerPairs = [];
     for ($i = 0, $numberOfQuestions = 3; $i < $numberOfQuestions; $i += 1) {
         $number = rand(1, 300);

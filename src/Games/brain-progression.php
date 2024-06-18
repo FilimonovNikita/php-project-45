@@ -15,12 +15,12 @@ function starprogression()
         $step = rand(1,10);
         $arrayFirstNumber = rand(0, 100);
         $arrayAllNumbers = [];
-        for ($x = 0, $curentNumber=$arrayFirstNumber; $x < $arrayNumber; $x += 1){
+        for ($x = 0, $curentNumber = $arrayFirstNumber; $x < $arrayNumber; $x += 1) {
             $arrayAllNumbers[] = $curentNumber;
             $curentNumber += $step;
         }
 
-        $arrayPosQuestion = rand(0, $arrayNumber-1);
+        $arrayPosQuestion = rand(0, $arrayNumber - 1);
         $answer = $arrayAllNumbers[$arrayPosQuestion];
         $arrayAllNumbers[$arrayPosQuestion] = "..";
         $question = implode(" ", $arrayAllNumbers);
