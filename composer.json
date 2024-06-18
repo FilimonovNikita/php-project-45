@@ -14,7 +14,8 @@
             "src/Games/even.php",
             "src/testFunImp.php",
             "src/Games/calculator.php",
-            "src/Games/brain-gcd.php"
+            "src/Games/brain-gcd.php",
+            "src/Games/brain-progression.php"
         ]
     },
     "bin": [
@@ -22,7 +23,8 @@
         "bin/test2",
         "bin/brain-even",
         "bin/brain-calc",
-        "bin/brain-gcd"
+        "bin/brain-gcd",
+        "bin/brain-progression"
     ],
     "require": {
         "wp-cli/wp-cli": "^2.10",

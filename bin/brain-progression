@@ -3,6 +3,6 @@
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
-use function Braingames\Games\Gcd\startgsd;
+use function Braingames\Games\progression\starprogression;
 
-startgsd();
+starprogression();
