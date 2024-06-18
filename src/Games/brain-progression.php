@@ -20,7 +20,7 @@ function starprogression()
             $curentNumber += $step;
         }
 
-        $arrayPosQuestion = rand(1, $arrayNumber);
+        $arrayPosQuestion = rand(0, $arrayNumber-1);
         $answer = $arrayAllNumbers[$arrayPosQuestion];
         $arrayAllNumbers[$arrayPosQuestion] = "..";
         $question = implode(",", $arrayAllNumbers);
