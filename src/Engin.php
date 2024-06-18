@@ -19,8 +19,7 @@ function startGame(string $welcomeMessage, array $questionAnswerPairs)
             line("Let's try again, %s!", $name);
             $passed &= false;
             break;
-        } 
-        else{ 
+        } else {
             line("Correct!");
         }
     }
