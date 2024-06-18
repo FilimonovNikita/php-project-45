@@ -10,11 +10,25 @@ function startgsd()
     
     $questionAnswerPairs = [];
     for ($i = 0, $numberOfQuestions = 3; $i < $numberOfQuestions; $i += 1) {
-        $number1 = rand(1, 100);
-        $number2 = rand(1, 100);
-        $question = "{$number1} {$number2}";
-        $answer = gmp_gcd($number1, $number2);
-        $questionAnswerPairs[] = [$question,(string) $answer];
+        $firstNumber = rand(1, 100);
+        $secondNumber = rand(1, 100);
+        if ($firstNumber > $secondNumber) {
+            $dividend = $firstNumber;
+            $divisor = $secondNumber;
+        } else {
+            $dividend = $secondNumber;
+            $divisor = $firstNumber;
+        }
+
+        do {
+            $remainder = $dividend % $divisor;
+            $dividend = $divisor;
+            $divisor = $remainder;
+        } while ($divisor > 0);
+
+        $question = "{$firstNumber} {$secondNumber}";
+        $answer = (string) $dividend;
+        $questionAnswerPairs[] = [$question, $answer];
     }
     startGame($welcomeMessage, $questionAnswerPairs);
 }

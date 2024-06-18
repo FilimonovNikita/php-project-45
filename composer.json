@@ -12,19 +12,19 @@
             "src/Cli.php",
             "src/Engin.php",
             "src/Games/even.php",
-            "src/testFunImp.php",
             "src/Games/calculator.php",
             "src/Games/brain-gcd.php",
-            "src/Games/brain-progression.php"
+            "src/Games/brain-progression.php",
+            "src/Games/brain-prime.php"
         ]
     },
     "bin": [
         "bin/brain-games",
-        "bin/test2",
         "bin/brain-even",
         "bin/brain-calc",
         "bin/brain-gcd",
-        "bin/brain-progression"
+        "bin/brain-progression",
+        "bin/brain-prime"
     ],
     "require": {
         "wp-cli/wp-cli": "^2.10",

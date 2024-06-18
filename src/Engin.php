@@ -14,8 +14,6 @@ function startGame(string $welcomeMessage, array $questionAnswerPairs)
     foreach ($questionAnswerPairs as [$question, $answer]){
         line("Question: {$question}");
         $userAnsfer = prompt("Your answer: ");
-        $a = gettype($userAnsfer);
-        $b = gettype($answer);
         line ("$userAnsfer {$a} /n $answer {$b}");
         if ($userAnsfer !== $answer){
             line("'{$userAnsfer}' is wrong answer ;(. Correct answer was '{$answer}'.");
@@ -29,6 +27,6 @@ function startGame(string $welcomeMessage, array $questionAnswerPairs)
         }
     }
     if ($passed) {
-        line("Congratulations, {$name}");
+        line("Congratulations, {$name}!");
     }
 }
