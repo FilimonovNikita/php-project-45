@@ -23,7 +23,7 @@ function startGame(string $welcomeMessage, array $questionAnswerPairs)
             line("Correct!");
         }
     }
-    if ($passed) {
+    if ((bool) $passed) {
         line("Congratulations, {$name}!");
     }
 }
